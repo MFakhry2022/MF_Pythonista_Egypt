@@ -1,0 +1,55 @@
+{% extends 'partials/base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block main %}
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">Security</h1>
+  <div class="btn-toolbar mb-2 mb-md-0">
+    <div class="card mb-5">      
+      <div class="card-body">
+        <div class="btn-group me-2">
+          <a href="{% url 'check_url' %}">
+            <button type="button" class="btn btn-primary">check_url</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-5">      
+      <div class="card-body">
+        <div class="btn-group me-2">
+          <a href="{% url 'Open_Ports' %}">
+            <button type="button" class="btn btn-primary">Open_Ports</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-5">      
+      <div class="card-body">
+        <div class="btn-group me-2">
+          <a href="{% url 'Encrypt_Decrypt' %}">
+            <button type="button" class="btn btn-primary">Encrypt_Decrypt</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-8">
+  <img class=img-fluid  src="{% static 'assets/img/logo.png' %}" alt="MF Pythonista Egypt">
+</div>
+<div class="col-lg-3">
+</div>
+  
+    <div class="modal">
+      {{ df }}
+    </div>
+   
+
+
+{% endblock %}
