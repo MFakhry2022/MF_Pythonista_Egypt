@@ -1,0 +1,14 @@
+
+
+
+$ cd desktop
+$ git clone https://github.com/MFakhry2022/MF_Pythonista_Egypt_Project.git
+$ cd MF_Pythonista_Egypt_Project
+$ git add .
+$ git config --global user.email "mfdeveloper22@gmail.com"
+$ git config --global user.name "Mohamed Fakhry"
+$ git commit -m "initial commit"
+$ git commit -m "more changes"
+$ git push origin main
+
+
